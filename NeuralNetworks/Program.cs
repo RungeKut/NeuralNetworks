@@ -15,7 +15,7 @@ namespace NeuralNetworks
             Application.SetCompatibleTextRenderingDefault(false);
 
             mainForm _form1View = new mainForm();
-            Model.Network network = new Model.Network(Model.NetworkMode.Demo);
+            Model.Network network = new Model.Network(Model.NetworkMode.Run);
             Presenter presenter = new Presenter(network, _form1View);
 
             Application.Run(_form1View);

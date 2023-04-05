@@ -1,19 +1,55 @@
 ﻿namespace NeuralNetworks.Model
 {
-    enum MemoryMode//режимы работы памяти
+    /// <summary>
+    /// Режимы работы памяти
+    /// </summary>
+    enum MemoryMode
     {
+        /// <summary>
+        /// Чтение
+        /// </summary>
         GET,
+
+        /// <summary>
+        /// Запись
+        /// </summary>
         SET
     }
-    enum NeuronType//тип нейрона
+
+    /// <summary>
+    /// Тип нейрона (классификация по слою)
+    /// </summary>
+    enum NeuronType
     {
+        /// <summary>
+        /// Нейрон скрытого слоя
+        /// </summary>
         Hidden,
+
+        /// <summary>
+        /// Нейрон последнего слоя результата
+        /// </summary>
         Output
     }
-    enum NetworkMode//режимы работы сети
+
+    /// <summary>
+    /// Режимы работы нейросети
+    /// </summary>
+    enum NetworkMode
     {
+        /// <summary>
+        /// Обучение
+        /// </summary>
         Train,
+
+        /// <summary>
+        /// Тестирование
+        /// </summary>
         Test,
-        Demo
+
+        /// <summary>
+        /// Полезная работа
+        /// </summary>
+        Run
     }
 }
