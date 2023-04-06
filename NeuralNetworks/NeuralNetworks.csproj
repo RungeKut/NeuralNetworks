@@ -53,6 +53,9 @@
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="IView.cs" />
+    <Compile Include="mainFormMenuStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Model\HiddenLayer.cs" />
     <Compile Include="Model\InputLayer.cs" />
     <Compile Include="Model\Layer.cs" />
