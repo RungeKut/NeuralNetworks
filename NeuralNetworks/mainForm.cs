@@ -15,7 +15,7 @@ namespace NeuralNetworks
         public event EventHandler<EventArgs> GotResult;
 
         public mainForm() => InitializeComponent();
-        private void Form1_Load(object sender, EventArgs e) { }
+        private void mainForm_Load(object sender, EventArgs e) { }
 
         private void recognizebutton_Click(object sender, EventArgs e) => GotResult?.Invoke(this, EventArgs.Empty);
         private void ChangeState(Button b, int index)
@@ -31,6 +31,7 @@ namespace NeuralNetworks
                 _inputPixels[index] = 0d;
             }
         }
+        /*
         private void button1_Click(object sender, EventArgs e) => ChangeState(button1, 0);
         private void button2_Click(object sender, EventArgs e) => ChangeState(button2, 1);
         private void button3_Click(object sender, EventArgs e) => ChangeState(button3, 2);
@@ -46,5 +47,6 @@ namespace NeuralNetworks
         private void button13_Click(object sender, EventArgs e) => ChangeState(button13, 12);
         private void button14_Click(object sender, EventArgs e) => ChangeState(button14, 13);
         private void button15_Click(object sender, EventArgs e) => ChangeState(button15, 14);
+        */
     }
 }
